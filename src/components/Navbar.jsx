@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div>
          <Box sx={{ flexGrow: 1 }}>
-         
+
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -28,11 +28,11 @@ const Navbar = () => {
             News
           </Typography>
           <Link to="/dashboard">
-          <Button variant='contained' color='inherit'>Dashboard</Button>
+          <Button variant='contained' color='info'>Dashboard</Button>
           </Link>
           &nbsp;
           <Link to="/add">
-          <Button variant='contained' color="inherit">add product</Button>
+          <Button variant='contained' color="info">add product</Button>
           </Link>
         </Toolbar>
       </AppBar>

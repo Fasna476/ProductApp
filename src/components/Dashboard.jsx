@@ -17,6 +17,7 @@ const Dashboard = () => {
     })
   return (
     <div>
+      <Typography variant="h4" align="center">Product List</Typography>
         <Box sx={{ flexGrow: 1 }}>
          <Grid container spacing={2}>
          {product.map((val) => {
@@ -31,13 +32,13 @@ const Dashboard = () => {
                             //   alt={val.title}
                             />
                      <CardContent>
-                           <Typography gutterBottom variant="h5" component="div">
+                           <Typography gutterBottom variant="h6" component="div">
                             {val.title}
                            </Typography>
-                            <Typography variant="h4" sx={{ color: 'text.secondary' }}>
+                            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                                 {val.price}
                              </Typography>
-                             <Typography variant="h4" sx={{ color: 'text.secondary' }}>
+                             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                                 {val.category}
                              </Typography>
                       </CardContent>
